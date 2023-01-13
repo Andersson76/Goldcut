@@ -1,0 +1,276 @@
+/*
+Theme Name: Goldcut Theme
+Description: Goldcut theme
+*/
+
+@import url(//db.onlinewebfonts.com/c/060e116a70e3096c52db16f61aaab194?family=Sofia+Pro);
+
+/* @font-face {font-family: "Sofia Pro"; 
+    src: url("//db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.eot"); 
+    src: url("//db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.svg#Sofia Pro") format("svg"); }
+ */
+
+* {
+    box-sizing: border-box;
+    font-family: "Sofia Pro";
+}
+
+html, body{
+    min-height: 100vh!important;
+  }
+
+.body {
+    margin: 0!important;
+    min-height: 100vh;
+}
+
+.header-gc {
+    background:black;
+    height: 160px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+main{
+    /* margin-bottom: 220px; */
+}
+
+.menu-header {
+    height: 130px;;
+}
+
+.top-bar {
+    background: #C0AB62;
+}
+
+.brand-usp {
+    height: 30px;
+}
+
+.brand-usp p {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    margin: 0px;
+    margin-top: 3px;
+}
+
+.nav-menu-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul#menu-top-menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    margin: 0!important;
+}
+
+#menu-top-menu a {
+    text-decoration: none!important;
+    text-transform: uppercase;
+    color: white;
+}
+
+#menu-top-menu a:hover {
+        text-decoration: underline!important;
+} 
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hamburger-menu */
+.toggle-nav {
+    display: none !important;
+}
+
+.menu.main {
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    text-align: left;
+}
+	
+.menu.main ul {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    top: 0px;
+    right: 0px;
+    z-index: 999;
+    padding-right: 15px;
+    background: #fff;
+}
+	
+.menu.main ul li {
+    float: none;
+    display: block;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    min-width: 200px;
+    background: #fff;
+    text-align: right;
+}
+	
+.main.menu li:after { 
+    content: none; 
+}
+
+
+/* .footer-bs{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    margin: 0;
+} */
+
+.footer-bs {
+ /*    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000; */
+    background: #000;
+
+}
+
+.aws-container .aws-search-form {
+    height: 37px!important;
+}
+
+.aws-search-btn {
+    background: #C0AB62!important;
+}
+
+.aws-search-btn_icon {
+    color: #fff!important;
+}
+
+  .footer-brand, .footer-support, .footer-social, .footer-nav {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.footer-brand {
+    padding-top: 0!important;
+    justify-content: center;
+}
+
+ul#menu-footer-menu {
+    list-style: none;
+    padding-left: 0;
+}
+
+#menu-footer-menu a {
+    text-decoration: none!important;
+    color: #fff;
+}
+
+.footer-widget-contact a {
+    text-decoration: none!important;
+    color: #fff;
+    padding-top: 15px;
+}
+
+.footer-widget-contact h4, .footer-widget-social h4, .footer-widget-service h4 {
+    border-bottom: 2px solid #C0AB62;
+    width: 80px;
+    padding-bottom: 15px; 
+    color: #8080808a;
+}
+
+.footer-menu {
+    min-height: 180px;
+    width: 80%;
+    margin: auto!important;
+}
+
+.footer-content-bottom {
+    border-top: solid 1px #8080808a;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+.footer-content-bottom p {
+    margin: 0;
+    color: #C0AB62;
+}
+
+.content-404 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+
+
+@media screen and ( max-width: 580px ) {
+    .toggle-nav {
+        display: inline-block !important;
+    }
+}
+
+@media screen and ( max-width: 580px ) {
+    .toggle-nav {
+        display: inline-block !important;
+        /* float: right; */
+        margin: 25px;
+        font-size: 2em;
+        transition: color linear 0.15s;
+	}
+		
+    a.toggle-nav:link, 
+	a.toggle-nav:visited,
+	a.toggle-nav:hover, 
+	a.toggle-nav:active {
+        text-decoration: none;
+        color: #fff;
+    } 
+
+    .footer-brand, .footer-support, .footer-social, .footer-nav {
+        align-items: center;
+    }
+
+
+
+    .menu-footer-menu-container, .footer-widget-service h4 {
+        text-align: center!important;
+    }
+
+    .footer-widget-service {
+        text-align: center;
+    }
+    .footer-brand {
+        display:none;
+    }
+
+
+}
+
+@media screen and ( max-width: 770px ) { 
+    .footer-brand {
+        margin-top: 20px!important;
+    }
+
+}

@@ -10,27 +10,12 @@
 ?>
 
 <?php get_header(); ?>
-
-    <!-- <div class="content-404">
-		<h1>404</h1>
-	</div> -->
-
-<div id="primary" class="content-404">
-	<div class="title">
-		<h1>404</h1>
+<section class="sida-404">
+	<div class="img_404">
+		<img src="https://goldcut.se/wp-content/themes/goldcuttheme/assets/404sida.png" class="img-404">
 	</div>
-
-	<div class="page-content">
-		<?php
-		$image = get_field( 'image', 'options' );
-		if ( ! empty( $image ) ) :
-			?>
-			<img
-				src="<?php echo esc_url( $image['url'] ); ?>"
-				alt="<?php echo esc_attr( $image['alt'] ); ?>"
-			/>
-		<?php endif; ?>
+	<div class="404-text">
+		<p class="p-404">Sidan kan inte hittas</p>
 	</div>
-</div>
-
+</section>
 <?php get_footer(); ?>

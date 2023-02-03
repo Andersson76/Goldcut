@@ -3,20 +3,12 @@ Theme Name: Goldcut Theme
 Description: Goldcut theme
 */
 
-@import url(//db.onlinewebfonts.com/c/060e116a70e3096c52db16f61aaab194?family=Sofia+Pro);
-
-/* @font-face {font-family: "Sofia Pro"; 
-    src: url("//db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.eot"); 
-    src: url("//db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.eot?#iefix") format("embedded-opentype"), 
-    url("//db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.woff2") format("woff2"), 
-    url("//db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.woff") format("woff"), 
-    url("//db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.ttf") format("truetype"), 
-    url("//db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.svg#Sofia Pro") format("svg"); }
- */
+ 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Pacifico&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: "Sofia Pro";
+    font-family: 'DM Sans', sans-serif;
 }
 
 html, body{
@@ -28,19 +20,10 @@ html, body{
     min-height: 100vh;
 }
 
+/* Header */
 .header-gc {
     background:black;
     height: 160px;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-main{
-    /* margin-bottom: 220px; */
 }
 
 .menu-header {
@@ -61,6 +44,8 @@ main{
     font-size: 14px;
     margin: 0px;
     margin-top: 3px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
 }
 
 .nav-menu-icons {
@@ -82,22 +67,19 @@ ul#menu-top-menu {
 #menu-top-menu a {
     text-decoration: none!important;
     text-transform: uppercase;
-    color: white;
+    color: white!important;
 }
 
 #menu-top-menu a:hover {
-        text-decoration: underline!important;
+    text-decoration: underline!important;
+    text-underline-offset: 7px!important;
 } 
+
 
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* Hamburger-menu */
-.toggle-nav {
-    display: none !important;
 }
 
 .menu.main {
@@ -133,39 +115,40 @@ ul#menu-top-menu {
     content: none; 
 }
 
+/* Sub-menu toggle */
 
-/* .footer-bs{
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #000;
-    margin: 0;
-} */
+.sub-menu { 
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    color: #515151;
+}
+
+/* startpage */
+
+.card-img {
+    z-index: 0;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .text-over-img {
+    z-index: 1;
+    margin-top: -150px;
+  }
+
+  /* Footer */
 
 .footer-bs {
- /*    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #000; */
     background: #000;
-
 }
 
-.aws-container .aws-search-form {
-    height: 37px!important;
-}
-
-.aws-search-btn {
-    background: #C0AB62!important;
-}
-
-.aws-search-btn_icon {
-    color: #fff!important;
-}
-
-  .footer-brand, .footer-support, .footer-social, .footer-nav {
+.footer-brand, .footer-support, .footer-social, .footer-nav {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -195,7 +178,7 @@ ul#menu-footer-menu {
 
 .footer-widget-contact h4, .footer-widget-social h4, .footer-widget-service h4 {
     border-bottom: 2px solid #C0AB62;
-    width: 80px;
+    width: 90px;
     padding-bottom: 15px; 
     color: #8080808a;
 }
@@ -217,60 +200,240 @@ ul#menu-footer-menu {
     color: #C0AB62;
 }
 
-.content-404 h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
+/* shoppage */
+
+.box-one, .box-two, .box-three, .box-four {
+    height: 400px;
+}
+
+.box-one {
+    margin-top: 50px;
+}
+
+.test-text {
+    display: none;
+}
+
+.hero-img {
+    height: 450px!important;
+    /* -o-object-fit: cover;
+       object-fit: cover; */
+}
+
+.carousel-caption {
+    right: 70%!important;
+    left: 15%!important;
+    width: 25%;
+    text-align: start!important;
+    top: 10%;
+}
+
+.carousel-dark .carousel-caption {
+    color: #fff!important;
+
+}
+
+.button.btn-style {
+    border: 1px solid #c1ab62;
+    background: #c1ab62;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+img.img-shop {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 1.5;
+    
+}
+
+.text-hero {
+    color: #ebe9eb!important;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.text-hero-h1 {
+    color: #ebe9eb!important;
+}
+
+.section-text {
+    padding-right: 30px!important;
+    color: #515151;
+}
+
+.section-text h1 {
+    border-bottom: 2px solid #C0AB62;
+    width: 15%;
+    padding-bottom: 10px;
+    color: #515151;
+}
+
+.section-text-two {
+    padding-left: 30px!important;
+    color: #515151;
+}
+
+.section-text-two h1 {
+    border-bottom: 2px solid #C0AB62;
+    width: 15%;
+    padding-bottom: 10px;
+    color: #515151;
+}
+
+.btn-container {
+    padding: 20px 0px;
+}
+
+img.ex-img {
+    display:none;
+}
+
+.section-text {
+    padding: 0!important;
+}
+
+.box-four {
+    margin-bottom: 3rem!important;
+}
+
+h4.text-contact-h4 {
+    color: #ebe9eb!important;
+    font-size: 32px!important;
+  }
+  
+  p.text-contact-p {
+    color: #ebe9eb!important;
+    font-size: 18px!important;
+    line-height: 1.5;
   }
 
+  p.opening-text {
+    color: #ebe9eb!important;
+    line-height: 1.6;
+  }
+  
+  h3 {
+    color: #515151!important;
+  }
 
-@media screen and ( max-width: 580px ) {
-    .toggle-nav {
-        display: inline-block !important;
+.container-form {
+    width: 80%!important;
+    margin: auto;
+}
+
+
+
+@media screen and (max-width:564px) {
+    .box-one, .box-two, .box-three, .box-four  {
+        height: auto; 
+        margin-top: 0px;
+    } 
+
+    img.ex-img {
+        display: block;
+    }
+
+    img.reg-img {
+        display:none;
+    }
+
+    .section-text {
+        padding: 3rem !important;
+    }
+
+    .section-text-two {
+        padding: 3rem !important;
+    }
+
+    .booking {
+        display:none;
     }
 }
 
-@media screen and ( max-width: 580px ) {
-    .toggle-nav {
-        display: inline-block !important;
-        /* float: right; */
-        margin: 25px;
-        font-size: 2em;
-        transition: color linear 0.15s;
-	}
-		
-    a.toggle-nav:link, 
-	a.toggle-nav:visited,
-	a.toggle-nav:hover, 
-	a.toggle-nav:active {
-        text-decoration: none;
-        color: #fff;
-    } 
+@media screen and (max-width: 575px) {
 
-    .footer-brand, .footer-support, .footer-social, .footer-nav {
-        align-items: center;
+    .footer-brand {
+        display:none!important;
     }
 
+    .menu-top-menu-container {
+        display:none;   
+    }
 
+   #menu {
+       display:none;
+   }
+
+   .custom-logo {
+       width: 100px;
+       height: auto;
+   }
+}
+
+.empty-div {
+    display:none
+}
+
+@media  screen and (max-width:863px) {
+    
+    ul#menu-top-menu {
+        gap: 15px!important;
+        font-size: 14px;
+    }
+
+    a.button.btn-style.header {
+        padding: 8px;
+    }
+
+    .carousel-caption {
+        width: 35%
+    }
+ } 
+
+@media screen and (max-width: 770px) {
+    .footer-brand, .footer-support, .footer-social, .footer-nav {
+        align-items: center!important;
+    }
 
     .menu-footer-menu-container, .footer-widget-service h4 {
         text-align: center!important;
     }
-
-    .footer-widget-service {
-        text-align: center;
-    }
-    .footer-brand {
-        display:none;
+    
+    .footer-widget-service, .has-text-color {
+        text-align: center!important;
     }
 
+   #menu {
+    display:none;
+   }
 
+   .empty-div {
+    display:block
+    }
 }
 
-@media screen and ( max-width: 770px ) { 
-    .footer-brand {
-        margin-top: 20px!important;
+@media screen and (max-width:400px) {
+     h4.text-contact-h4 {
+        text-align: center;
     }
 
+    p.text-contact-p {
+        text-align: center;
+        font-size: 16px!important;
+    }
+
+    p.opening-text {
+        display:none;
+    }
 }

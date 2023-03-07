@@ -1,2 +1,2 @@
 # master-thesis
-Our master-thesis for the education Fullstack web developer at Medieinstitutet Gothenburg. 
+Our final school work in becoming web developer for e-commerce
